@@ -1,3 +1,6 @@
+# movieloops
+Proyecto propuesto por IBM para el Talent Fest SCL 2017 para el Squad LalaLoops
+
 ### Requerimientos Técnicos
 
 El proyecto fue realizado con las siguientes dependencias NPM:
