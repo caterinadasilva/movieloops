@@ -12631,6 +12631,12 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 $(document).ready(function(){
+    $("#show").hide();
+    $("#opciones_1").on( "click", function() {
+        $("#primerosfiltros").show();
+    });
+});
+$(document).ready(function(){
 	$(function () {
 	  $('[data-toggle="tooltip"]').tooltip()
 	});
