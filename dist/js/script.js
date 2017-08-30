@@ -12633,6 +12633,6 @@ if (typeof jQuery === 'undefined') {
 $(document).ready(function(){
     $("#show").hide();
     $("#opciones_1").on( "click", function() {
-        $("#show").show();
+        $("#primerosfiltros").show();
     });
 });
