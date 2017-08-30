@@ -259,9 +259,8 @@ a {
   color: #000;
 }
 .stub .number {
-  position: absolute;
-  left: 40px;
-  font-size: 150px;
+    left: 40px;
+    font-size: 126px;
 }
 .stub .invite {
   position: absolute;
@@ -304,11 +303,10 @@ a {
   width: 0;
 }
 .check .big {
-  font-size: 80px;
-  font-weight: 900;
-  line-height: .8em;
-  color: black;
-  text-align:center;
+    font-size: 68px;
+    font-weight: 900;
+    line-height: .8em;
+    color: #000;
 }
 .check .number {
     position: absolute;
@@ -352,17 +350,42 @@ a {
     padding-top: 2px;
 }
 .btn-group-lg>.btn{
-    padding: 1px 19px;
-    font-size: 20px;
-    line-height: -0.666667;
-    border-radius: 3px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
 }
+.btn-primary {
+    background-color: #B00C04;
+    border-color: #B00C04;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    margin-left: -31px;
+    margin-top: 39px;
+  }
 .btn-danger {
     color: #fff;
     background-color: #d9534f;
     border-color: #d43f3a;
-    margin-left: 30px;
-    margin-top: -69px;
+    margin-left: 3px;
+    margin-top: 37px;
+}
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 15px;
+    margin-left: 75%;
+    margin-top: -21%;
+    position: absolute;
+}
+.btn-info {
+    color: #fff;
+    background-color: #B00C04;
+    border-color: #B00C04;
 }
 #anterior{
 	margin-top: 12.3%;
