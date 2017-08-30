@@ -368,3 +368,273 @@ a {
 	margin-top: 12.3%;
     color: black;
 }
+/*Estilos vane*/
+#box{
+    display: inline-flex;
+    margin-left: 20%; 
+}
+@media (max-width: 425px){
+    #box{
+        display: block;
+    }
+}
+.imagen{
+    width: 220px;
+    height: 320px;   
+    .imagen1{
+        background-color: white;
+        opacity: 0.8;
+        width: 210px;
+        height: 310px;
+        padding: 10px; 
+        margin-top: -310px;
+        .btn{
+            float: right;
+            margin-top: 5px;
+        }
+        h4{
+            margin-top: 15px;
+            margin-bottom: -20px;
+            margin-left: 15px;
+            font-weight: bold;
+        } 
+        h5{
+            color: yellow;
+            font-weight: bold;
+            display: inline-flex;
+            margin-bottom: 25px;
+        }
+        h3{
+            font-weight: bold;
+            display: inline-flex;
+            font-size: 13px;
+            margin-top: -10px; 
+            margin-right: 5px;           
+        }
+        p{
+           margin-left: 15px;
+           margin-top: -20px; 
+           font-weight: bold;
+           font-size: 13px;
+        }   
+    }
+}
+
+.imagen_a{
+    width: 220px;
+    height: 320px;   
+    .imagen2{
+        background-color: white;
+        opacity: 0.8;
+        width: 210px;
+        height: 310px;
+        padding: 10px; 
+        margin-top: -310px;
+        .btn{
+            float: right;
+            margin-top: 5px;
+        }
+        h4{
+            margin-top: 15px;
+            margin-bottom: -20px;
+            margin-left: 15px;
+            font-weight: bold;
+        } 
+        h5{
+            color: yellow;
+            font-weight: bold;
+            display: inline-flex;
+            margin-bottom: 25px;
+        }
+        h3{
+            font-weight: bold;
+            display: inline-flex;
+            font-size: 13px;
+            margin-top: -10px; 
+            margin-right: 5px;           
+        }
+        p{
+           margin-left: 15px;
+           margin-top: -20px; 
+           font-weight: bold;
+           font-size: 10.5px;
+        }    
+    }
+}
+
+.imagen_b{
+    width: 220px;
+    height: 320px;   
+    .imagen3{
+        background-color: white;
+        opacity: 0.8;
+        width: 210px;
+        height: 310px;
+        padding: 10px; 
+        margin-top: -310px;
+        .btn{
+            float: right;
+            margin-top: 5px;
+        }       
+        h4{
+            margin-top: 15px;
+            margin-bottom: -20px;
+            margin-left: 15px;
+            font-weight: bold;
+        } 
+        h5{
+            color: yellow;
+            font-weight: bold;
+            display: inline-flex;
+            margin-bottom: 25px;
+        }
+        h3{
+            font-weight: bold;
+            display: inline-flex;
+            font-size: 13px;
+            margin-top: -10px; 
+            margin-right: 5px;           
+        }
+        p{
+           margin-left: 15px;
+           margin-top: -20px; 
+           font-weight: bold;
+           font-size: 11px;
+        }    
+    }
+}
+
+#box-1{
+    display: inline-flex;
+    margin-left: 20%; 
+}
+@media (max-width: 425px){
+    #box-1{
+        display: block;
+    }
+}
+.imagen_c{
+    width: 220px;
+    height: 320px;   
+    .imagen4{
+        background-color: white;
+        opacity: 0.8;
+        width: 210px;
+        height: 310px;
+        padding: 10px; 
+        margin-top: -310px;
+        .btn{
+            float: right;
+            margin-top: 5px;
+        }
+        h4{
+            margin-top: 15px;
+            margin-bottom: -20px;
+            margin-left: 13px;
+            font-weight: bold;
+        } 
+        h5{
+            color: yellow;
+            font-weight: bold;
+            display: inline-flex;
+            margin-bottom: 25px;
+        }
+        h3{
+            font-weight: bold;
+            display: inline-flex;
+            font-size: 13px;
+            margin-top: -10px; 
+            margin-right: 5px;           
+        }
+        p{
+           margin-left: 15px;
+           margin-top: -20px; 
+           font-weight: bold;
+           font-size: 10px;
+        }    
+    }
+}
+
+.imagen_d{
+    width: 220px;
+    height: 320px;   
+    .imagen5{
+        background-color: white;
+        opacity: 0.8;
+        width: 210px;
+        height: 310px;
+        padding: 10px; 
+        margin-top: -310px;
+        .btn{
+            float: right;
+            margin-top: 5px;
+        }        
+        h4{
+            margin-top: 15px;
+            margin-bottom: -20px;
+            margin-left: 15px;
+            font-weight: bold;
+        } 
+        h5{
+            color: yellow;
+            font-weight: bold;
+            display: inline-flex;
+            margin-bottom: 25px;
+        }
+        h3{
+            font-weight: bold;
+            display: inline-flex;
+            font-size: 13px;
+            margin-top: -10px; 
+            margin-right: 5px;           
+        }
+        p{
+           margin-left: 15px;
+           margin-top: -20px; 
+           font-weight: bold;
+           font-size: 13px;
+        }    
+    }
+}
+
+.imagen_e{
+    width: 220px;
+    height: 320px;   
+    .imagen6{
+        background-color: white;
+        opacity: 0.8;
+        width: 210px;
+        height: 310px;
+        padding: 10px; 
+        margin-top: -310px;
+        .btn{
+            float: right;
+            margin-top: 5px;
+        }
+        h4{
+            margin-top: 15px;
+            margin-bottom: -20px;
+            margin-left: 15px;
+            font-weight: bold;
+        } 
+        h5{
+            color: yellow;
+            font-weight: bold;
+            display: inline-flex;
+            margin-bottom: 25px;
+        }
+        h3{
+            font-weight: bold;
+            display: inline-flex;
+            font-size: 13px;
+            margin-top: -10px; 
+            margin-right: 5px;           
+        }
+        p{
+           margin-left: 15px;
+           margin-top: -20px; 
+           font-weight: bold;
+           font-size: 13px;
+        }   
+    }
+}
