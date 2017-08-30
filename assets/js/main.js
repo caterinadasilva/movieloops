@@ -18,7 +18,7 @@ $(document).ready(function(){
 		$(".imagen2").hide();
 
 		$(".imagen2").append("<h4>"+cine[1].title+"</h4>"+"<br>"
-							+"<h5>Calificación: "+cine[1].calificacion+"</h5>"+"<br>"
+							+"<h3>Calificación: </h3><h5>"+cine[1].calificacion+"</h5>"+"<br>"
 							+"<p>Reseña: "+cine[1].sinopsis+"</p>");		
 
 		$("#dos").click(function(){				
@@ -32,7 +32,7 @@ $(document).ready(function(){
 		$(".imagen3").hide();
 
 		$(".imagen3").append("<h4>"+cine[2].title+"</h4>"+"<br>"
-							+"<h5>Calificación: "+cine[2].calificacion+"</h5>"+"<br>"
+							+"<h3>Calificación: </h3><h5>"+cine[2].calificacion+"</h5>"+"<br>"
 							+"<p>Reseña: "+cine[2].sinopsis+"</p>");	
 
 		$("#tres").click(function(){				
@@ -47,7 +47,7 @@ $(document).ready(function(){
 		$(".imagen4").hide();
 
 		$(".imagen4").append("<h4>"+cine[3].title+"</h4>"+"<br>"
-							+"<h5>Calificación: "+cine[3].calificacion+"</h5>"+"<br>"
+							+"<h3>Calificación: </h3><h5>"+cine[3].calificacion+"</h5>"+"<br>"
 							+"<p>Reseña: "+cine[3].sinopsis+"</p>");		
 
 		$("#cuatro").click(function(){				
@@ -61,7 +61,7 @@ $(document).ready(function(){
 		$(".imagen5").hide();
 
 		$(".imagen5").append("<h4>"+cine[4].title+"</h4>"+"<br>"
-							+"<h5>Calificación: "+cine[4].calificacion+"</h5>"+"<br>"
+							+"<h3>Calificación: </h3><h5>"+cine[4].calificacion+"</h5>"+"<br>"
 							+"<p>Reseña: "+cine[4].sinopsis+"</p>");		
 
 		$("#cinco").click(function(){				
@@ -75,7 +75,7 @@ $(document).ready(function(){
 		$(".imagen6").hide();
 
 		$(".imagen6").append("<h4>"+cine[5].title+"</h4>"+"<br>"
-							+"<h5>Calificación: "+cine[5].calificacion+"</h5>"+"<br>"
+							+"<h3>Calificación: </h3><h5>"+cine[5].calificacion+"</h5>"+"<br>"
 							+"<p>Reseña: "+cine[5].sinopsis+"</p>");		
 
 		$("#seis").click(function(){				
