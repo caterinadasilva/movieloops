@@ -63,21 +63,19 @@
 
 <!-- Botones Primeros Filtros -->
     <div class="span12">
-        <div id="tab" class="btn-group" data-toggle="buttons-radio">
-           <a href="#prices2" class="btn btn-large btn-info active" data-toggle="tab">Ubicación</a>
-            <a href="#features2" class="btn btn-large btn-info" data-toggle="tab">Películas</a>
-        </div>
+
             
     <div class="tab-content"><!--Tab que muestra los filtros ubicación o películas -->
 
             <!-- Búsqueda por Ubicación -->
               <div class="tab-pane active" id="prices2">
                 <br>
-                <p class="lead">Mapa</p>
-                <div class="row">
+                <p class="lead text-uppercase">Estos son los cines más cercanos a ti</p>
+                <div id="caja" class="row">
                     <div class="col-xs-6 span3">
                       <img id="mapa" src="dist/image/maps.jpeg" width="300x400">
                    </div>
+<!-- SELECT -->
                     <div class="col-xs-6 span9">
                         <div class="col-sm-12 form-group">
                                   <select name="payment_type" id="payment_type" onchange="optionCheck()" class="form-control select-insurance-information">
@@ -109,31 +107,21 @@
                                     </select>
                         </div>
                     </div>
-<ul class="pager center"><li><a href="peliculas.html">Siguiente</a></li></ul> <!-- Botón SIGUIENTE -->
                 </div>
-              </div><!--FIN Búsqueda por Ubicación-->
+<!--FIN Búsqueda por Ubicación-->
 
-             <!--Búsqueda por Películas-->
-              <div class="tab-pane" id="features2">
-                    <br>
-                <p class="lead">Escoge tu película</p>
-                <div class="row">
-                    <div class="col-xs-10 span6">
-                      <img src="dist/image/annabelle2.jpg" width="200x300">
-                      <img src="dist/image/cabrosdemierda.jpg" width="200x300">
-                      <img src="dist/image/darktower.jpg" width="200x300">
-                   </div>
-                  <div class="col-xs-10 span6">
-                      <img src="dist/image/dunkerque.jpg" width="200x300">
-                      <img src="dist/image/durodecuidar.jpg" width="200x300">
-                      <img src="dist/image/emoji.jpg" width="200x300">
-                   </div>
-<ul class="pager center"><li><a href="#">Siguiente</a></li></ul> <!-- Botón SIGUIENTE -->
+<!--Búsqueda de Películas sin hover =( -->
+                <div id="pelis" class="col-xs-10 span6">
+                    <img src="dist/image/dunkerque.jpg" width="200x300">
+                    <img src="dist/image/durodecuidar.jpg" width="200x300">
+                    <img src="dist/image/emoji.jpg" width="200x300">
+                    <img src="dist/image/annabelle2.jpg" width="200x300">
                 </div>
-              </div><!--FIN Búsqueda por Películas-->
-          </div>
+<!-- Botón SIGUIENTE -->
+                  <ul class="pager center">
+                    <li><a id="siguiente" href="#">Siguiente</a></li>
+                  </ul>
 </section>
-
 <!-- JS -->
   <script src="dist/js/script.js" ></script>
 </body>
