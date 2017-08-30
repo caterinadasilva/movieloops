@@ -1,8 +1,8 @@
 $( document ).ready(function() {
-	$(function () {
-	  $("#datepicker").datepicker({ 
-	        autoclose: true, 
-	        todayHighlight: true
-	  }).datepicker('update', new Date());
+	$('.input-group.date').datepicker({
+		format: "dd/mm/yyyy",
+	    todayBtn: true,
+	    language: "es",
+	    todayHighlight: true
 	});
 });

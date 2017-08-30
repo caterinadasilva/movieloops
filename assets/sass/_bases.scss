@@ -81,3 +81,17 @@ a {
         transition: all 0.5s ease;
     }
 }
+.btn-primary {
+    background-color: $rojo;
+    border-color: $rojo;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: $rojo-oscuro;
+        border-color: $rojo-oscuro;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+}
