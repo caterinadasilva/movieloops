@@ -64,9 +64,9 @@
 
   <div class="tab-pane" id="features2">
     <br>
+      <p class="lead">Escoge tu película</p>
       <div class="row">
-        <div class="col-md-6">
-          <p class="lead">Escoge tu película</p>
+        <div class="col-xs-8">
             <div id="custom-search-input">
                 <div class="input-group col-md-12">
                     <input type="text" class="form-control input-lg" placeholder="Buscar película" />
@@ -81,20 +81,30 @@
     </div>
   </div>
 <!--Fin Búsqueda por Películas-->
-<br>
+
+<!-- filtro género -->
+            <div class="col-xs-12">
+              <form id='form-id'>
+                <input id="genero" name='test' type='radio' checked /> Género
+                <input id="ranking" name='test' type='radio' /> Ranking
+              </form>
+            </div>
+
 <!-- hover -->
 <div class="row">
-                    <div class="col-xs-10 span6">
+                    <div class="col-xs-10 span6 filtro-pelis">
                       <img src="dist/image/annabelle2.jpg" width="200x300">
+                      <img src="dist/image/durodecuidar.jpg" width="200x300">
                       <img src="dist/image/cabrosdemierda.jpg" width="200x300">
                       <img src="dist/image/darktower.jpg" width="200x300">
                    </div>
-                  <div class="col-xs-10 span6">
+                  <div class="col-xs-10 span6 filtro-pelis">
                       <img src="dist/image/dunkerque.jpg" width="200x300">
                       <img src="dist/image/durodecuidar.jpg" width="200x300">
                       <img src="dist/image/emoji.jpg" width="200x300">
+                      <img src="dist/image/annabelle2.jpg" width="200x300">
                    </div>
-<ul class="pager center"><li><a href="#">Siguiente</a></li></ul> <!-- Botón SIGUIENTE -->
+<ul class="pager center"><li><a id="siguiente" href="#">Siguiente</a></li></ul> <!-- Botón SIGUIENTE -->
 </div>
       </div><!--FIN Búsqueda por Películas-->
           </div>
