@@ -12647,7 +12647,6 @@ if ($( "#monto-final" )) {
 	  $( "#monto-final" ).text( n * 4300 );
 	};
 	countChecked();
-	 
 	$( "input[type=checkbox]" ).on( "click", countChecked );
 }
 	

@@ -12,81 +12,152 @@
 <body>
 
   <!--NAVBAR -->
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <img id="logo" src="dist/image/logofinal.png" width="200x200">
-      </div>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+  <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <img id="logo" src="dist/image/logofinal.png" width="200x200">
+    </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Contacto</a></li>
-            <li><a href="#">Sobre nosotros</a></li>
-            <li><a href="#">Iniciar sesión</a></li>
-            <li><a href="#">Crear cuenta</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
-<header id="movie">
+  <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Sobre nosotros</a></li>
+          <li><a href="#">Iniciar sesión</a></li>
+          <li><a href="#">Crear cuenta</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <section class="wiz">
+    <!-- Wizard Navegation -->
+    <div class="stepwizard col-md-offset-3">
+        <div class="stepwizard-row setup-panel">
+          <div class="stepwizard-step">
+            <a href="javascript:history.back()" type="button" class="btn btn-default btn-circle" data-toggle="tooltip" data-placement="top" title="Ir atrás">1</a>
+          </div>
+          <div class="stepwizard-step">
+            <a href="#step-2" type="button" class="btn btn-primary btn-circle" data-toggle="tooltip" data-placement="top" title="Reserva de entradas">2</a>
+          </div>
+          <div class="stepwizard-step">
+            <a href="#step-3" type="button" class="btn btn-default btn-circle" data-toggle="tooltip" data-placement="top" title="Comprar" disabled="disabled">3</a>
+          </div>
+        </div>
+    </div><!-- FIN Wizard Navigation -->
+  </section>
+<section id="movie">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-6 col-md-6 col-xs-12">
+			<div class="col-sm-4 col-xs-12">
         <img class="img-responsive cartel" src="assets/img/dunkerque.jpg">
       </div>
-      <div class="col-lg-6 col-md-6 col-xs-12">
+      <div class="col-sm-8 col-xs-12">
         <h2 class="title-1">Dunkerque</h2>
           <ul class="detalles">
-            <li>110 minutos</li>
-            <li>APT</li>
-            <li>Acción</li>
-            <li>8.4/10</li>
+            <li id="duracion" class="info-movie">110 minutos</li>
+            <li id="clasificacion" class="info-movie">+18</li>
+            <li id="categoria" class="info-movie">Acción</li>
+            <li id="puntuacion" class="info-movie">8.4/10</li>
           </ul>
-      </div>
-		</div>
-    <br>
-    <div class="row">
-      <div class="col-lg-4 col-md-4 col-xs-12">
-        <label>Select Date:</label>
-            <div id="datepicker" class="input-group date" data-date-format="mm-dd-yyyy">
-                <input class="form-control" type="text" readonly />
-                <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-            </div>
-      </div>
-      <div class="col-lg-4 col-md-4 col-xs-12">
-        <div class="input-group my-group"> 
-            <input type="text" class="form-control" name="snpid" placeholder="Formato Película"/>
-            <select id="lunch" class="selectpicker form-control" data-live-search="true" title="">
-                <option>2D</option>
-                <option>3D</option>
-                <option>4D</option>
+          <div class="row">
+      <div class="col-xs-6">
+        <div class="form-group">
+           <label for="cine">Cine</label>
+            <select id="cine" class="selectpicker form-control" data-live-search="true" title="">
+                <option value="" disabled selected>Elige una opción</option>
+                <optgroup label="CinePlanet" data-max-options="2">
+                  <option value="self-pay"> Portal La Dehesa </option>
+                  <option value="self-pay2"> Florida Center </option>
+                  <option value="self-pay3"> Costanera Center </option>
+                  <option value="insurance"> Plaza Alameda </option>
+                  <option value="insurance"> Paseo Quilín </option>
+                <optgroup label="Cine Hoyts" data-max-options="2">
+                  <option value="self-pay"> La Reina </option>
+                  <option value="self-pay2"> San Agustin </option>
+                  <option value="self-pay3"> Estación Central </option>
+                  <option value="insurance"> Puente Alto </option>
+                  <option value="insurance"> Parque Arauco </option>
+                  <option value="insurance"> Maipú </option>
+                  <option value="insurance"> Los Trapenses </option>
+                  <option value="insurance"> Quilicura </option>
+                  <option value="insurance"> Plaza Egaña </option>
+                  <option value="insurance"> Paseo San Bernardo </option>
+                <optgroup label="Cinemark" data-max-options="2">
+                  <option value="self-pay"> Alto Las Condes </option>
+                  <option value="self-pay2"> Plaza Vespucio </option>
+                  <option value="self-pay3"> Plaza Tobalaba </option>
+                  <option value="insurance"> Plaza Oeste </option>
+                  <option value="insurance"> Plaza Norte </option>
+                  <option value="insurance"> Portal Ñuñoa </option>
             </select> 
         </div>
       </div>
-        <div class="col-lg-4 col-md-4 col-xs-12">
-        <div class="input-group my-group"> 
-            <input type="text" class="form-control" name="snpid" placeholder="Horarios"/>
-            <select id="lunch" class="selectpicker form-control" data-live-search="true" title="">
+    </div>
+    <div class="row">
+      <div class="col-xs-6">
+        <div class="form-group">
+          <label>Fecha</label>
+          <div id="datepicker" class="input-group date" data-date-format="mm-dd-yyyy">
+              <input class="form-control" type="text" readonly />
+              <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <div class="form-group"> 
+            <label for="horario">Horario</label>
+            <select id="horario" class="selectpicker form-control" data-live-search="true" title="">
+                <option value="" disabled selected>Elige una opción</option>
                 <option>16:40</option>
                 <option>18:20</option>
                 <option>22:50</option>
             </select> 
         </div>
       </div>
+    </div>
     <div class="row">
-      <div class="col-lg-12 col-md-12 col-xs-12">
-          <h5>*Agregar descuentos</h5>
+      <div class="col-xs-6">
+        <div class="form-group"> 
+            <label for="formato">Formato Película</label>
+            <select id="formato" class="selectpicker form-control" data-live-search="true">
+              <option value="" disabled selected>Elige una opción</option>
+                <option>2D</option>
+                <option>3D</option>
+                <option>4D</option>
+            </select> 
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <div class="form-group"> 
+            <label for="idioma">Idioma</label>
+            <select id="idioma" class="selectpicker form-control" data-live-search="true">
+                <option value="" disabled selected>Elige una opción</option>
+                <option>Inglés subtitulado</option>
+                <option>Doblada</option>
+            </select> 
+        </div>
       </div>
     </div>
+    <div class="row">
+      <div class="col-xs-12 col-xs-6">
+        <a href="!#" class="btn btn-primary">Asientos seleccionados: <span id="asientos-sel">0</span></a>
+      </div>
+      <div class="col-xs-12 col-xs-6">
+        <span>Total a pagar:</span>
+        <h2>$<span id="total">0</span></h2>
+      </div>
+    </div>
+      </div>
+		</div>
+    <br>
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-12 col-md-12 col-xs-12">
@@ -94,7 +165,7 @@
         </div>
       </div>
     </div>
-</header>
+</section>
 
 <script src="dist/js/script.js" ></script>
 <script src="assets/js/reserva.js" ></script>
