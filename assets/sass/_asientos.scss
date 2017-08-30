@@ -1,0 +1,28 @@
+.cine {
+	table.sector {
+	    margin: 0 auto;
+	    background-image: url('../img/pantalla.png');
+	    background-repeat: no-repeat;
+	    background-size: 100%;
+	    thead.pantalla {
+	    	th {
+			    color: transparent;
+			    height: 100px;
+			}
+	    }
+	    tbody.asientos {
+	    	td {
+			    width: 25px;
+			    height: 30px;
+		    	text-align: center;
+		    	background-image: url('../img/asiento.png');
+		    	background-repeat: no-repeat;
+		    	
+		    	&.sin-asiento {
+		    		background-image: none;
+		    	}
+			}
+	    }
+	    
+	}
+}
