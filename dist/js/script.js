@@ -12630,11 +12630,65 @@ if (typeof jQuery === 'undefined') {
 
 }(jQuery);
 
+var cine =[
+	{"id":1,
+	"title": "Annabelle 2",
+	"category":"Terror",
+	"año":"2017",
+	"calificacion":"★★★",
+	"director":"David F. Sandberg",
+	"sinopsis":"¡Ella está de vuelta! Varios años después de la trágica muerte de su niña, un fabricante de muñecas y su mujer dan la bienvenida a una monja y varias niñas de un orfanato a su hogar, pero luego su casa se convirtió en el objetivo de una nueva posesión demoníaca.",
+	"url_img":"annabelle2.jpg"},
+	{"id":2,
+	"title": "Cabros de mierda",
+	"category":"Drama",
+	"año":"2017",
+	"calificacion":"★★★★",
+	"director":"Gonzalo Justiniano",
+	"sinopsis":"Con su camara, Samuel registrara como la poblacion lucha por sobrevivir en una situacion de normal anormalidad, entre ollas comunes, niños sin padres y las primeras grandes protestas. Con imagenes reales e ineditas, que han servido como material de reconstruccion historica y judicial en casos como el asesinato del cura Jarlan, Cabros de mierda es una accion que retrata ese Chile de la mano de Gladys.",
+	"url_img":"cabrosdemierda.jpg"},
+	{"id":3,
+	"title": "Dark tower",
+	"category":"Acción",
+	"año":"2017",
+	"calificacion":"★★★★★",
+	"director":"Nikolaj Arcel",
+	"sinopsis":"Existen otros mundos además de éste. La Torre Oscura, de Stephen King, la ambiciosa y extensa historia de uno de los autores más famosos del mundo, llega a la gran pantalla. El último Caballero Guerrero, Roland Deschain (Idris Elba), está confinado en una eterna batalla con Walter O Dim, también conocido como el Hombre de Negro (Matthew McConaughey), decidido a evitar que destruya la Torre Oscura, que mantiene unido al universo.",
+	"url_img":"darktower.jpg"},
+	{"id":4,
+	"title": "Dunkerque",
+	"category":"Acción",
+	"año":"2017",
+	"calificacion":"★★★★",
+	"director":"Christopher Nolan",
+	"sinopsis":"Año 1940, en plena Guerra Mundial. En las playas de Dunkerque, cientos de miles de soldados de las tropas británicas y aliadas se encuentran rodeadas por el avance del ejercito alemán que ha invadido Francia. Atrapados en la playa, con el mar cortándoles el paso, las tropas se enfrentan a una situación angustiosa que empeora a medida que el enemigo se acerca... Basada en hechos reales.",
+	"url_img":"dunkerque.jpg"},
+	{"id":5,
+	"title": "Duro de cuidar",
+	"category":"Acción",
+	"año":"2017",
+	"calificacion":"★★★★★",
+	"director":"Patrick Hughes",
+	"sinopsis":"El mejor guardaespaldas del mundo recibe un nuevo cliente, un asesino a sueldo que debe testificar en un juicio. Pero para llevar a buen puerto su relación tendrán que poner a un lado sus diferencias.",
+	"url_img":"durodecuidar.jpg"},	
+	{"id":6,
+	"title": "Emoji La película",
+	"category":"Animación",
+	"año":"2017",
+	"calificacion":"★★★★★",
+	"director":"Tony Leondis",
+	"sinopsis":"Emoji La película revela el mundo secreto nunca antes visto de tu smartphone. Escondido dentro de la aplicación de mensajes se encuentra Textópolis, una activa ciudad donde viven todos tus emojis favoritos, que esperan ser seleccionados por el usuario del teléfono.",
+	"url_img":"emoji.jpg"},
+]
 $(document).ready(function(){
     $("#show").hide();
     $("#opciones_1").on( "click", function() {
         $("#primerosfiltros").show();
     });
+
+    $("#uno").click(function(){
+		$(".imagen1").css({"background-color": "white"});
+	});
 });
 $(document).ready(function(){
 	$(function () {
@@ -12650,6 +12704,96 @@ $(document).ready(function(){
 	$( "input[type=checkbox]" ).on( "click", countChecked );
 
 
+$(document).ready(function(){
+
+	for(i=0; i<=cine.length; i++){ 	
+		$(".imagen1").append("<h4>"+cine[0].title+"</h4>"+"<br>"
+							+"<h3>Calificación: </h3><h5>"+cine[0].calificacion+"</h5>"+"<br>"
+							+"<p>Reseña: "+cine[0].sinopsis+"</p>");
+
+		$(".imagen1").hide();
+
+		$("#uno").click(function(){				
+			$(".imagen1").fadeIn("slow");
+		})
+
+		$("#close").click(function(){				
+			$(".imagen1").hide();
+		})
+		
+		$(".imagen2").hide();
+
+		$(".imagen2").append("<h4>"+cine[1].title+"</h4>"+"<br>"
+							+"<h5>Calificación: "+cine[1].calificacion+"</h5>"+"<br>"
+							+"<p>Reseña: "+cine[1].sinopsis+"</p>");		
+
+		$("#dos").click(function(){				
+			$(".imagen2").fadeIn("slow");
+		})
+
+		$("#close2").click(function(){				
+			$(".imagen2").hide();
+		})
+
+		$(".imagen3").hide();
+
+		$(".imagen3").append("<h4>"+cine[2].title+"</h4>"+"<br>"
+							+"<h5>Calificación: "+cine[2].calificacion+"</h5>"+"<br>"
+							+"<p>Reseña: "+cine[2].sinopsis+"</p>");	
+
+		$("#tres").click(function(){				
+			$(".imagen3").fadeIn("slow");
+		})
+
+		$("#close3").click(function(){				
+			$(".imagen3").hide();
+		})
+
+
+		$(".imagen4").hide();
+
+		$(".imagen4").append("<h4>"+cine[3].title+"</h4>"+"<br>"
+							+"<h5>Calificación: "+cine[3].calificacion+"</h5>"+"<br>"
+							+"<p>Reseña: "+cine[3].sinopsis+"</p>");		
+
+		$("#cuatro").click(function(){				
+			$(".imagen4").fadeIn("slow");
+		})
+
+		$("#close4").click(function(){				
+			$(".imagen4").hide();
+		})
+
+		$(".imagen5").hide();
+
+		$(".imagen5").append("<h4>"+cine[4].title+"</h4>"+"<br>"
+							+"<h5>Calificación: "+cine[4].calificacion+"</h5>"+"<br>"
+							+"<p>Reseña: "+cine[4].sinopsis+"</p>");		
+
+		$("#cinco").click(function(){				
+			$(".imagen5").fadeIn("slow");
+		})
+
+		$("#close5").click(function(){				
+			$(".imagen5").hide();
+		})
+
+		$(".imagen6").hide();
+
+		$(".imagen6").append("<h4>"+cine[5].title+"</h4>"+"<br>"
+							+"<h5>Calificación: "+cine[5].calificacion+"</h5>"+"<br>"
+							+"<p>Reseña: "+cine[5].sinopsis+"</p>");		
+
+		$("#seis").click(function(){				
+			$(".imagen6").fadeIn("slow");
+		})
+
+		$("#close6").click(function(){				
+			$(".imagen6").hide();
+		})
+		break;
+	}
+}) 
 $( document ).ready(function() {
 	$(function () {
 	  $("#datepicker").datepicker({ 
