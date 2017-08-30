@@ -1,6 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400,700');
+@import 'bootstrap-datepicker.min.css';
+@import 'bootstrap-datepicker.standalone.min.css';
+@import 'bootstrap-datepicker3.min.css';
 @import '_mixin.scss';
 @import '_variables.scss';
 @import '_bases.scss';
+@import '_index.scss';
 @import '_menu.scss';
-@import '_asientos.scss';
+@import '_cine.scss';
+@import '_cartelera.scss';
 @import '_reserva.scss';
+@import '_asientos.scss';

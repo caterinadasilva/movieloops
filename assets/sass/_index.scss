@@ -1,0 +1,35 @@
+#logo-inicial, .filtro-inicial {
+    min-height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#logo-inicial {
+	min-height: 25vh;
+}
+.divisor {
+	position: relative;
+	display: block;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+	&:before,
+	&:after {
+		content: "";
+		width: 45%;
+		height: 2px;
+		background-color: $blanco;
+		position: absolute;
+		top: 50%;
+	}
+	&:before {
+		left: 0;
+	}
+	&:after {
+		right: 0;
+	}
+	h1 {
+		margin: 0;
+	}
+}

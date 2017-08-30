@@ -1,29 +1,25 @@
-/*estilos nav*/
-nav{
-    margin-top: -5%;
-    margin-left: -1px;
-    margin-right: -1px;
+body {
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+    color: $blanco;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
-.navbar-default {
-    background-color: black;
-    border-color: black;
+
+h1, h2, h3 {
+    font-family: "Changa One", Helvetica, Arial, sans-serif;
 }
-#logo{
-	margin-top:10px;
-}
+
 .span6 img{
 margin-bottom: 4px;
-}
-.col-xs-10 {
-    width: 100%;
 }
 .span12 {
 	margin-top: 5%;
 }
+
 /* estilos wizard*/
-body {
-    margin-top:40px;
-}
 .stepwizard-step p {
     margin-top: 10px;
 }
@@ -32,13 +28,10 @@ body {
 }
 .stepwizard {
     display: table;
-    width: 50%;
+    width: 90%;
     position: relative;
-    margin-left: 25%;
-}
-.stepwizard-step button[disabled] {
-    opacity: 1 !important;
-    filter: alpha(opacity=100) !important;
+    max-width: 500px;
+    margin: 30px auto 50px;
 }
 .stepwizard-row:before {
     top: 14px;
@@ -52,8 +45,19 @@ body {
 }
 .stepwizard-step {
     display: table-cell;
-    text-align: center;
+    text-align: right;
     position: relative;
+    .btn-primary {
+        background-color: $rojo;
+        border-color: $rojo;
+    }
+    .btn[disabled] {
+        opacity: 1 !important;
+        filter: alpha(opacity=100) !important;
+        background-color: $negro;
+        border-color: $gris;
+        color: $gris;
+    }
 }
 .btn-circle {
     width: 30px;
@@ -64,6 +68,7 @@ body {
     line-height: 1.428571429;
     border-radius: 15px;
 }
+<<<<<<< HEAD
 /* estilo img map*/
 #mapa {
     margin-left: 22%;
@@ -91,4 +96,32 @@ body {
     text-align:center;
     color:#fff !important;
     z-index:2;
+=======
+
+a {
+    color: $blanco;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    &:hover,
+    &:focus,
+    &:active {
+        color: $amarillo;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+}
+.btn-primary {
+    background-color: $rojo;
+    border-color: $rojo;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: $rojo-oscuro;
+        border-color: $rojo-oscuro;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+>>>>>>> 3e62c63014fa4a670a006837aac40a24467920eb
 }
