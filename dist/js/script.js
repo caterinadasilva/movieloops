@@ -12649,3 +12649,12 @@ $(document).ready(function(){
 	 
 	$( "input[type=checkbox]" ).on( "click", countChecked );
 
+
+$( document ).ready(function() {
+	$(function () {
+	  $("#datepicker").datepicker({ 
+	        autoclose: true, 
+	        todayHighlight: true
+	  }).datepicker('update', new Date());
+	});
+});
