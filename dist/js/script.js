@@ -12629,3 +12629,10 @@ if (typeof jQuery === 'undefined') {
   })
 
 }(jQuery);
+
+$(document).ready(function(){
+    $("#show").hide();
+    $("#opciones_1").on( "click", function() {
+        $("#show").show();
+    });
+});

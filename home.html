@@ -10,55 +10,127 @@
 	<link rel="stylesheet" type="text/css" href="dist/css/style.min.css">
 </head>
 <body>
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
+
+  <!--NAVBAR -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="#">Logo</a>
-    </div>
+      </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Login</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-<header>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-xs-12 text-center">
-        <h2 class="text-uppercase">A big title</h2><br><br>
-          <div class="radio">
-            <label>
-              <input type="radio" name="opciones" id="opciones_1" value="opcion_1" checked>
-              Ubicación
-            </label>
-            <label>
-              <input type="radio" name="opciones" id="opciones_2" value="opcion_2" checked>
-              Peliculas
-            </label>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Login</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+<!-- Sección HOME - Primeros Filtros -->
+    <section id="primerosfiltros">
+      <div class="container text-center">
+        <div class="row">
+
+    <!-- Wizard Navegation -->
+  <div class="stepwizard col-md-offset-3">
+      <div class="stepwizard-row setup-panel">
+        <div class="stepwizard-step">
+          <a href="#step-1" type="button" class="btn btn-primary btn-circle">1</a>
+        </div>
+        <div class="stepwizard-step">
+          <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
+        </div>
+        <div class="stepwizard-step">
+          <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
+        </div>
+        <div class="stepwizard-step">
+          <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">4</a>
+        </div>
       </div>
-      </div>
-		</div>
-	</div>
-</header>
-<section id="" >
-	<div class="container">
-		<div class="row">
-      <div class="col-xs-12 text-center">
-          
-      </div>
-		</div>
-	</div>
+  </div><!-- FIN Wizard Navigation -->
+
+<!-- Botones Primeros Filtros -->
+    <div class="span12">
+        <div id="tab" class="btn-group" data-toggle="buttons-radio">
+           <a href="#prices2" class="btn btn-large btn-info active" data-toggle="tab">Ubicación</a>
+            <a href="#features2" class="btn btn-large btn-info" data-toggle="tab">Películas</a>
+        </div>
+            
+    <div class="tab-content"><!--Tab que muestra los filtros ubicación o películas -->
+
+            <!-- Búsqueda por Ubicación -->
+              <div class="tab-pane active" id="prices2">
+                <br>
+                <p class="lead">Mapa</p>
+                <div class="row">
+                    <div class="col-xs-6 span3">
+                      <img id="mapa" src="dist/image/maps.jpeg" width="300x400">
+                   </div>
+                    <div class="col-xs-6 span9">
+                        <div class="col-sm-12 form-group">
+                                  <select name="payment_type" id="payment_type" onchange="optionCheck()" class="form-control select-insurance-information">
+                                      <option>--Selecciona tu cine más cercano --</option>
+                                      <optgroup label="CinePlanet" data-max-options="2">
+                                        <option value="self-pay"> Portal La Dehesa </option>
+                                        <option value="self-pay2"> Florida Center </option>
+                                        <option value="self-pay3"> Costanera Center </option>
+                                        <option value="insurance"> Plaza Alameda </option>
+                                        <option value="insurance"> Paseo Quilín </option>
+                                      <optgroup label="Cine Hoyts" data-max-options="2">
+                                        <option value="self-pay"> La Reina </option>
+                                        <option value="self-pay2"> San Agustin </option>
+                                        <option value="self-pay3"> Estación Central </option>
+                                        <option value="insurance"> Puente Alto </option>
+                                        <option value="insurance"> Parque Arauco </option>
+                                        <option value="insurance"> Maipú </option>
+                                        <option value="insurance"> Los Trapenses </option>
+                                        <option value="insurance"> Quilicura </option>
+                                        <option value="insurance"> Plaza Egaña </option>
+                                        <option value="insurance"> Paseo San Bernardo </option>
+                                      <optgroup label="Cinemark" data-max-options="2">
+                                        <option value="self-pay"> Alto Las Condes </option>
+                                        <option value="self-pay2"> Plaza Vespucio </option>
+                                        <option value="self-pay3"> Plaza Tobalaba </option>
+                                        <option value="insurance"> Plaza Oeste </option>
+                                        <option value="insurance"> Plaza Norte </option>
+                                        <option value="insurance"> Portal Ñuñoa </option>
+                                    </select>
+                        </div>
+                    </div>
+<ul class="pager center"><li><a href="#">Siguiente</a></li></ul> <!-- Botón SIGUIENTE -->
+                </div>
+              </div><!--FIN Búsqueda por Ubicación-->
+
+             <!--Búsqueda por Películas-->
+              <div class="tab-pane" id="features2">
+                    <br>
+                <p class="lead">Escoge tu película</p>
+                <div class="row">
+                    <div class="col-xs-10 span6">
+                      <img src="dist/image/annabelle2.jpg" width="200x300">
+                      <img src="dist/image/cabrosdemierda.jpg" width="200x300">
+                      <img src="dist/image/darktower.jpg" width="200x300">
+                   </div>
+                  <div class="col-xs-10 span6">
+                      <img src="dist/image/dunkerque.jpg" width="200x300">
+                      <img src="dist/image/durodecuidar.jpg" width="200x300">
+                      <img src="dist/image/emoji.jpg" width="200x300">
+                   </div>
+<ul class="pager center"><li><a href="#">Siguiente</a></li></ul> <!-- Botón SIGUIENTE -->
+                </div>
+              </div><!--FIN Búsqueda por Películas-->
+          </div>
 </section>
-<script src="dist/js/script.js" ></script>
+
+<!-- JS -->
+  <script src="dist/js/script.js" ></script>
 </body>
 </html>
