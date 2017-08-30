@@ -12641,6 +12641,7 @@ $(document).ready(function(){
 	  $('[data-toggle="tooltip"]').tooltip()
 	});
 });
+if ($( "#monto-final" )) {
 	var countChecked = function() {
 	  var n = $( "input:checked" ).length;
 	  $( "#monto-final" ).text( n * 4300 );
@@ -12648,6 +12649,8 @@ $(document).ready(function(){
 	countChecked();
 	 
 	$( "input[type=checkbox]" ).on( "click", countChecked );
+}
+	
 
 
 $( document ).ready(function() {

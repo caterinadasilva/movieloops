@@ -1,29 +1,19 @@
-/*estilos nav*/
-nav{
-    margin-top: -5%;
-    margin-left: -1px;
-    margin-right: -1px;
-}
-.navbar-default {
-    background-color: black;
-    border-color: black;
-}
-#logo{
-	margin-top:10px;
+body {
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+    color: $blanco;
 }
 .span6 img{
 margin-bottom: 4px;
 }
-.col-xs-10 {
-    width: 100%;
-}
 .span12 {
 	margin-top: 5%;
 }
+
 /* estilos wizard*/
-body {
-    margin-top:40px;
-}
 .stepwizard-step p {
     margin-top: 10px;
 }
@@ -52,7 +42,7 @@ body {
 }
 .stepwizard-step {
     display: table-cell;
-    text-align: center;
+    text-align: right;
     position: relative;
 }
 .btn-circle {
@@ -64,7 +54,16 @@ body {
     line-height: 1.428571429;
     border-radius: 15px;
 }
-/* estilo img map*/
-#mapa {
-    margin-left: 22%;
+
+a {
+    color: $blanco;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    &:hover,
+    &:focus,
+    &:active {
+        color: $amarillo;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
 }
