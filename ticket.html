@@ -102,10 +102,42 @@
     <div class="row">
       <div class="col-xs-8 col-xs-offset-2">
         <button class="btn btn-default atras" type="submit" onclick="javascript:history.back()"><i class="fa fa-pencil" aria-hidden="true"></i> Editar</button>
-        <button class="btn btn-primary sgte" type="submit" onclick="window.location.href = 'ticket.html'"><i class="fa fa-credit-card-alt" aria-hidden="true"></i> Pagar</button>
+        <button class="btn btn-primary sgte" type="submit"  data-toggle="modal" data-target="#webpay"><i class="fa fa-credit-card-alt" aria-hidden="true"></i> Pagar</button>
       </div>
     </div>
   </div>
+  <!-- Modal Webpay-->
+<div class="modal fade" id="webpay" tabindex="-1" role="dialog" aria-labelledby="webpay">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+        <button id="gracias-btn" type="button" class="btn btn-primary" data-toggle="modal" data-target="#gracias">Pagar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal Gracias-->
+<div class="modal fade" id="gracias" tabindex="-1" role="dialog" aria-labelledby="gracias">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <h1>¡Gracias por tu compra!</h1>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" onclick="window.location.href ='index.html'">Salir</button>
+      </div>
+    </div>
+  </div>
+</div>
 <!-- JS -->
   <script src="dist/js/script.js" ></script>
 </body>

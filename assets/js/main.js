@@ -142,4 +142,7 @@ $(document).ready(function(){
 		})
 		break;
 	}
+	$("#gracias-btn").click(function(){				
+			$("#webpay").fadeOut("fast");
+		})
 }) 

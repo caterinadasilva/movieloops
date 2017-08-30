@@ -12854,6 +12854,9 @@ $(document).ready(function(){
 		})
 		break;
 	}
+	$("#gracias-btn").click(function(){				
+			$("#webpay").fadeOut("fast");
+		})
 }) 
 $( document ).ready(function() {
 	$('.input-group.date').datepicker({

@@ -363,3 +363,18 @@ a {
 #lupa{
   background-color: #B00C04;
 }
+
+#webpay {
+  .modal-header,
+  .modal-footer {
+    border-color: transparent;
+  }
+  .modal-content {
+    background-image: url("../img/webpay.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .modal-body {
+    height: 400px;
+  }
+}
