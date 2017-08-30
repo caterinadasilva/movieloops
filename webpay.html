@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es_CL">
+<head>
+	<title>MovieLoops</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Squad LalaLoops">
+	<script src="https://use.fontawesome.com/d2c9b2c5c1.js"></script>
+	<link rel="stylesheet" type="text/css" href="dist/css/style.min.css">
+</head>
+<body>
+
+<div id="wpcontenedor">
+        <div id="wpcabecera">
+    <div id="wplogo">
+        <img src="dist/image/logowp2.gif" alt="logowp2"></img>
+    </div>
+        </div>
+    <div id="wpprincipal">
+        <form id="timeOutForm" method="post" action="wpTimeOut.cgi">
+        <input type="hidden" name="token" value="e034399b7c30eb85bd82fb06eb849bc7753f57c6ecc9c5af57b8d5f379e59767"/>
+        </form>
+<script type="text/javascript">
+    
+    setTimeout('wpTimeOut()',600000);
+    function wpTimeOut(){
+        $("#timeOutForm").submit();
+    }
+</script>
+<form id="webpayForm" name="webpayForm" action="bp_control.cgi" method="POST" onsubmit="return false;">
+       
+<script type="text/javascript">
+    cambioEstilo('#EFEFF0','#D4D4D4','#F7F7F7');
+</script>
+        
+    <div id="wpcardtype">
+        <div class='grupoPestanas'>
+            <div id='a' class='pestana_u'>
+                <b class="p1u"></b><b class="p2u"></b><b class="p3u"></b><b class="p4u"></b>
+                <div class="punselect" style='height:45px;'>
+                Tarjeta de Cr&eacute;dito
+                    <input type="radio" name="TBK_TIPO_TARJETA"
+                    id="TBK_TIPO_TARJETA" value="CREDIT_CARD"
+                    onclick="ajaxSubmitForm('change_card.cgi','webpayForm','wpcard')" />
+                    <br/>
+                                <img src="dist/image/Visa.gif" alt="Visa" />&nbsp;
+                                <img src="dist/image/MasterCard.gif" alt="MasterCard" />&nbsp;
+                                <img src="dist/image/Magna.gif" alt="Magna" />&nbsp;
+                                <img src="dist/image/AMEX.gif" alt="AMEX" />&nbsp;
+                                <img src="dist/image/Diners.gif" alt="Diners" />&nbsp;
+                </div>
+                <b class="pbu"></b>
+            </div>
+            <div class='bordeInferior' style='width:10px;'></div>
+            <div class='pestana_s'>
+            <b class="p1s"></b><b class="p2s"></b><b class="p3s"></b><b class="p4s"></b>
+            <div id="debito" class="pselect" style='height:45px;'>
+            Redcompra
+            <input type="radio" name="TBK_TIPO_TARJETA"
+            id="TBK_TIPO_TARJETA" value="DEBIT_CARD"
+            onclick="ajaxSubmitForm('change_card.cgi','webpayForm','wpcard')" />
+            <br/>
+            
+            <img src="dist/image/rcompra.gif" alt="redcompra" />&nbsp;          
+            </div>
+            <b class="pbs"></b>
+            </div>
+        </div>
+    </div>
+    <div id="wpcard">
+        <div id="montotrx" align="center">
+        <table class="EstiloMonto" >
+                <tr>
+                    <td align="left"><strong><span class="Estilo666">
+                                Total a Pagar 
+        $ 1</span></strong> </td>
+                </tr>
+                <tr>
+                    <td align="left"> <span class="Estilo6">Un pesos chilenos </span></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="error"></div>
+    <div id="wpbotones">
+        <table class="wptablacentrada" width="470" border="0">
+            <tr>
+                <td align="left">
+                    <div id="wpbtn1">
+                        <input type="button" class="btnanular" name="button" id="button3" onclick="ajaxSubmitForm('anular_form.cgi', 'webpayForm', 'wpcontenedor');" value=""
+                               style="background:url(dist/image/btnanular.gif)" />
+                    </div>
+                </td>
+                <td align="right">
+                    <div id="wpbtn2">
+                        <input type="button" class="btnpagar" name="button" id="button" onclick="ajaxSubmitForm('validar_form.cgi', 'webpayForm', 'error');$('#button').css('background','url(img/btnpagarbn.gif)');$('#button').attr('disabled', 'true');" value=""
+                               style="background:url(dist/image/btnpagar.gif)" />
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <input type="hidden" name="TBK_TOKEN" value="e034399b7c30eb85bd82fb06eb849bc7753f57c6ecc9c5af57b8d5f379e59767" />
+    <input type="hidden" name="currentCommerceId" id="currentCommerceId" value="default"/>
+</form>
+            </div>
+<div id="wpfooter">    
+    <div id="wpimage" align="right">
+            <img src="dist/image/Visa.gif" alt="Visa" />&nbsp;
+            <img src="dist/image/MasterCard.gif" alt="MasterCard" />&nbsp;
+            <img src="dist/image/Magna.gif" alt="Magna" />&nbsp;
+            <img src="dist/image/AMEX.gif" alt="AMEX" />&nbsp;
+            <img src="dist/image/Diners.gif" alt="Diners" />&nbsp;
+            <img src="dist/image/rcompra.gif" alt="redcompra" />&nbsp;
+        <br>
+        <img src="dist/image/lock.gif" alt="logoCandado">
+        <SPAN CLASS=Info>
+            Esta transacci&oacute;n se est&aacute; realizando sobre un sistema seguro.</SPAN>
+        </img>
+        <br>
+        <table align="right">
+            <tr>
+                <td>
+                    <img src="dist/image/verifiedVisa.gif" alt="Visa"></img>
+                </td>
+                <td>
+                    <img src="dist/image/secureMasterCard.gif" alt="Master"></img>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+            </div>
+        </div>
+
+
+<!-- JS -->
+  <script src="dist/js/script.js" ></script>
+</body>
+</html>
