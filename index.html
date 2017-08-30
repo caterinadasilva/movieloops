@@ -3,7 +3,7 @@
 <head>
 	<title>MovieLoops</title>
 	<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Squad LalaLoops">
 	<script src="https://use.fontawesome.com/d2c9b2c5c1.js"></script>
@@ -43,24 +43,20 @@
 <div class="container">
   <div class="row">
     <div class="span12">
-           
+           <div class="tab-content">
+              <div role="tabpanel" class="tab-pane fade in active" id="Section1">
             <div id="tab" class="btn-group" data-toggle="buttons-radio">
-              <a href="#prices2" class="btn btn-large btn-info active" data-toggle="tab">Prices</a>
-              <a href="#features2" class="btn btn-large btn-info" data-toggle="tab">Features</a>
+              <a href="#prices2" class="btn btn-large btn-info active" data-toggle="tab">Ubicación</a>
+              <a href="#features2" class="btn btn-large btn-info" data-toggle="tab">Películas</a>
             </div>
              
             <div class="tab-content">
             <!--Búsqueda por ubicación-->
               <div class="tab-pane active" id="prices2">
                 <br>
-                <p class="lead">Prices content</p>
+                <p class="lead">Mapa</p>
                 <div class="row">
-                    <div class="span3">
-                      <img src="http://placehold.it/200x200">  
-                    </div>
-                    <div class="span9">
-                      <p>There are now two rates of Capital Gains Tax (CGT) for individuals. A standard rate of 18% and a higher rate of 28%. The annual exempt amount is still £10,100 for ’10-’11. For more information on CGT please see the factsheet we have put together, which is available to download below.</p> 
-                    </div>
+                      <div id="map"></div> 
                 </div>
               </div>
               <!--FIN Búsqueda por ubicación-->
@@ -79,12 +75,15 @@
                 </div>
               </div>
               <!--FIN Búsqueda por películas-->
-              
             </div>
         </div>
   </div>
 </div>
 </section>
+
+
+<script async defer src="http://maps.googleapis.com/maps/api/js?key=AIzaSyD96EfGps4ayV2z_Ky4esiSPjD_eFt0PvE&callback=initMap&libraries=places"></script>
 <script src="dist/js/script.js" ></script>
+<script src="dist/js/mapa.js"></script>
 </body>
 </html>
