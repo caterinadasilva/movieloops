@@ -12636,3 +12636,25 @@ $(document).ready(function(){
         $("#primerosfiltros").show();
     });
 });
+$(document).ready(function(){
+	$(function () {
+	  $('[data-toggle="tooltip"]').tooltip()
+	});
+});
+	var countChecked = function() {
+	  var n = $( "input:checked" ).length;
+	  $( "#monto-final" ).text( n * 4300 );
+	};
+	countChecked();
+	 
+	$( "input[type=checkbox]" ).on( "click", countChecked );
+
+
+$( document ).ready(function() {
+	$(function () {
+	  $("#datepicker").datepicker({ 
+	        autoclose: true, 
+	        todayHighlight: true
+	  }).datepicker('update', new Date());
+	});
+});
